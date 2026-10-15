@@ -1,0 +1,22 @@
+name: SkillArena
+version: '1.0.8'
+main: jp.skillarena.SkillArenaPlugin
+depend: [ProtocolLib]
+api-version: '1.20'
+author: SkillArena
+commands:
+  skills:
+    description: Open skill loadout menu
+  sa:
+    description: SkillArena commands
+  boss:
+    description: Spawn or stop Vargas boss
+    permission: skillarena.admin
+    usage: /boss <spawn|stop>
+  ultcharge:
+    description: Set ultimate charge
+    permission: skillarena.admin
+    usage: /ultcharge [player] [0-100]
+permissions:
+  skillarena.admin:
+    default: op
